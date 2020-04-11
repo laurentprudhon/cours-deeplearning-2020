@@ -9,4 +9,4 @@ bc = BearClassifier(model_path)
 
 @app.post("/bear/")
 def predict_bear(file: UploadFile = File(...)):
-    return bc.predict(file)
+    return bc.predict(file.file)
