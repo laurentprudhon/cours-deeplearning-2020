@@ -16,11 +16,14 @@ RUN conda install -y scikit-learn scipy
 # Deep learning computing library : PyTorch - CPU version
 RUN conda install -y -c pytorch pytorch torchvision cpuonly
 # Data science dev environment
-RUN conda install -y jupyter ipykernel matplotlib -c conda-forge voila 
+RUN conda install -y -c conda-forge jupyter ipykernel matplotlib voila 
 RUN jupyter serverextension enable voila --sys-prefix
 # Natural language processing library
 RUN conda install -y -c conda-forge spacy
 # High levek deep learning library : fastai2 
 RUN pip install fastcore fastprogress fastai2
+
+# Remove cached and unused files
+RUN conda clean -y -a
 
 CMD [ "sh", "--login", "-i" ]
