@@ -1,4 +1,4 @@
-ln ../../notebooks/bears.py bears.pkl
+ln ../../notebooks/bears.pkl bears.pkl
 ln ../../notebooks/bears.py bears.py
 ln ../../notebooks/bearsapi.py bearsapi.py
 
@@ -11,4 +11,7 @@ sudo docker run -p 8000:8000 -d laurentprudhon/fastai2:fastai2-api-example
 
 sudo docker ps
 sudo docker stop 113b72...
+
+sudo docker login
+sudo docker push laurentprudhon/fastai2:fastai2-api-example
 

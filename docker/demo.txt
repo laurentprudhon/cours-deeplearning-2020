@@ -1,0 +1,14 @@
+https://hub.docker.com/search?q=fastai2&type=image
+
+ssh 192.168.1.33
+
+sudo docker pull laurentprudhon/fastai2:fastai2-ui-example
+sudo docker pull laurentprudhon/fastai2:fastai2-api-example
+
+sudo docker run -p 8080:8080 -d laurentprudhon/fastai2:fastai2-ui-example
+sudo docker run -p 8000:8000 -d laurentprudhon/fastai2:fastai2-api-example
+
+sudo docker stats
+
+http://192.168.1.33:8080/
+http://192.168.1.33:8000/docs

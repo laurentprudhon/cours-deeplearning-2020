@@ -4,3 +4,6 @@ sudo docker history laurentprudhon/fastai2:fastai2-cpu-0.0.16
 sudo docker rmi -f <unsed image id>
 
 sudo docker run -it laurentprudhon/fastai2:fastai2-cpu-0.0.16
+
+sudo docker login
+sudo docker push laurentprudhon/fastai2:fastai2-cpu-0.0.16

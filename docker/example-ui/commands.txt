@@ -1,0 +1,15 @@
+ln ../../notebooks/bears.pkl bears.pkl
+ln ../../notebooks/bearsUI.py bearsUI.py
+
+sudo docker build -t laurentprudhon/fastai2:fastai2-ui-example .
+sudo docker images
+sudo docker history laurentprudhon/fastai2:fastai2-ui-example
+sudo docker rmi -f <unsed image id>
+
+sudo docker run -p 8080:8080 -d laurentprudhon/fastai2:fastui-example
+
+sudo docker ps
+sudo docker stop 113b72...
+
+sudo docker login
+sudo docker push laurentprudhon/fastai2:fastai2-ui-example
