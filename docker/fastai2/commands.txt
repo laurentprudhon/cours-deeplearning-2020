@@ -1,0 +1,6 @@
+sudo docker build -t laurentprudhon/fastai2:fastai2-cpu-0.0.16 .
+sudo docker images
+sudo docker history laurentprudhon/fastai2:fastai2-cpu-0.0.16
+sudo docker rmi -f <unsed image id>
+
+sudo docker run -it laurentprudhon/fastai2:fastai2-cpu-0.0.16

@@ -1,0 +1,14 @@
+ln ../../notebooks/bears.py bears.pkl
+ln ../../notebooks/bears.py bears.py
+ln ../../notebooks/bearsapi.py bearsapi.py
+
+sudo docker build -t laurentprudhon/fastai2:fastai2-api-example .
+sudo docker images
+sudo docker history laurentprudhon/fastai2:fastai2-api-example
+sudo docker rmi -f <unsed image id>
+
+sudo docker run -p 8000:8000 -d laurentprudhon/fastai2:fastai2-api-example
+
+sudo docker ps
+sudo docker stop 113b72...
+
